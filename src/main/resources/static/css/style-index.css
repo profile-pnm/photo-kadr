@@ -1,0 +1,10 @@
+header {
+	background: gray;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.menu {
+	background: green;
+	height: 206px;
+}
