@@ -12,7 +12,8 @@ import org.springframework.security.web.SecurityFilterChain;
 class SecurityConfig {
     final private String passwordEncoding = "none";
 
-    @Bean
+    @SuppressWarnings("deprecation")
+	@Bean
     public PasswordEncoder passwordEncoder() {
         return switch (passwordEncoding) {
             case "none" -> NoOpPasswordEncoder.getInstance();
@@ -28,6 +29,7 @@ class SecurityConfig {
         	//.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Disable session
         	.authorizeHttpRequests(auth -> auth
     		    .requestMatchers("/api/**").permitAll()
+    		    .requestMatchers("/").permitAll()
     		    .anyRequest().authenticated()
     		)
             //.addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
