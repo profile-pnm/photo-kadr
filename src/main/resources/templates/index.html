@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html 	lang="ru"
+		xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title> PhotoKadr </title>
+	<base href=".">
+	<title> Главная - PhotoKadr </title>
+	<!-- включение адаптивности для мобильных телефонов -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
+	<link href="/img/logo.ico" rel="icon" type="image/x-icon"/>
 	<link rel="stylesheet" th:href="@{/css/style-index.css}" />
 </head>
 <body>
-	<header> Header </header>
-		<div class="menu"> Menu </div>
-		<div class="main"> Main </div>
-	<footer> Footer </footer>	
+	<header> 
+		<a class="logo-link" href="/" > 
+			<img id="logo-img" 
+				 src="/img/logo.png"> Kadr
+		</a>
+	</header>
+	
+	<div class="menu"> 
+		<div class="login-container"> 
+			<a id="login-link" href="..page-login.html"> 
+				<img id="login-img"
+				 	 src="/img/avatar.png"> Login 
+			</a>
+		</div>
+		
+		<input id="search-field" type="search"
+			   placeholder="Search ...">
+			    
+		<a id="search-extended-button"
+		   href="..page-search-extended"> ... </a>
+	</div>
+		
+	<div class="photos"> 
+		photos
+	 </div>
+	
+	<footer>
+		Footer
+	</footer>	
 </body>
 </html>
