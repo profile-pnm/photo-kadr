@@ -20,7 +20,7 @@
 	
 	<div class="menu"> 
 		<div class="login-container"> 
-			<a id="login-link" href="..page-login.html"> 
+			<a id="login-link" th:href="@{authorization}"> 
 				<img id="login-img"
 				 	 src="/img/avatar.png"> Login 
 			</a>
@@ -34,7 +34,10 @@
 	</div>
 		
 	<div class="photos"> 
-		photos
+		<div id="flex-photo"></div>
+		<div id="flex-photo"></div>
+		<div id="flex-photo"></div>
+		<div id="flex-photo"></div>
 	 </div>
 	
 	<footer>

@@ -1,0 +1,90 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	margin: 5px;
+	display: flex;
+	justify-content: center; /* выравнивание элементов по центру */
+}
+
+header:hover {
+	opacity: 0.5;
+}
+
+.logo-link {
+	display: flex;		 
+	align-items: center; /* выравнивание элементов в строку */
+	text-decoration: none;
+	font-size: 50px;
+	color: black;
+}
+
+#logo-img {
+	height: auto;
+	width: 100px;
+}
+
+.login-form {
+	width: auto;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.email-context {
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px 30px 30px 30px;
+}
+
+#email-input {
+	border-radius: 8px;
+	height: 30px;
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+.password-context {
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 30px 30px 30px;
+}
+
+#password-input {
+	border-radius: 8px;
+	height: 30px;
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+#login-button {
+	font-size: 25px;
+	margin: 0px 100px 20px 100px;
+	background: white;
+	border-radius: 8px;
+	border: 2px solid black;
+}
+
+#login-button:hover {
+	background: #DCDCDC;
+}
+
+p {
+	font-size: 20px;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: gray;
+}

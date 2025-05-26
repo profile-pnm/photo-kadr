@@ -88,14 +88,26 @@ header:hover {
 }
 
 .photos {
-	background: orange;
 	margin: 5px;
 	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#flex-photo {
+	border: 2px black solid;
+	height: 150px;
+	width: 150px;
+	background: gray;
+	margin: 5px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 
 footer {
-	background: yellow;
+	background: gray;
+	color: white;
 	margin: 5px;
 	height: 100px;
 }

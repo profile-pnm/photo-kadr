@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация - PhotoKadr </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" th:href="@{/css/style-authorization.css}" />
+	<link href="/img/logo.ico" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+
+	<header> 
+		<a class="logo-link" href="/" > 
+			<img id="logo-img" 
+				 src="/img/logo.png"> Kadr
+		</a>
+	</header>
+	
+	<form class="login-form" method="POST">
+		<div class="email-context">
+			<label>Email</label>
+			<input id="email-input" type="text" 
+				   pattern="..."/>
+		</div>
+		<div class="password-context">
+			<label>Password</label>
+			<input id="password-input" type="password"
+				   pattern="..."/>
+		</div>
+		<button id="login-button">Login</button>
+	</form>
+	
+	<p>Not registered yet?</p>
+	<a href="..registration.html">Log out</a>
+	
+</body>
+</html>
