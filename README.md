@@ -19,5 +19,6 @@ Requirements:
    - spring-boot-devtools
    - spring-boot-starter-thymeleaf
    - spring-boot-starter-validation
+   - h2
 
 Import this project how maven project and run in IDE. Then open page in browser on `localhost:8080` 
